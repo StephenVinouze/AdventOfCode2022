@@ -94,6 +94,10 @@ fun main() {
     fun part2(input: List<String>): Int =
         input.sumOf { roundScorePart2(it) }
 
+    val testInput = readInput("Day02_test")
+    check(part1(testInput) == 15)
+    check(part2(testInput) == 12)
+
     val input = readInput("Day02")
     println(part1(input))
     println(part2(input))

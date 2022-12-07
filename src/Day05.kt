@@ -90,6 +90,10 @@ fun main() {
         return stacks.toTopStack()
     }
 
+    val testInput = readInput("Day05_test")
+    check(part1(testInput) == "CMZ")
+    check(part2(testInput) == "MCD")
+
     val input = readInput("Day05")
     println(part1(input))
     println(part2(input))
