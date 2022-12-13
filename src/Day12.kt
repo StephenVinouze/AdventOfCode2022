@@ -36,7 +36,7 @@ fun main() {
         val flattenSquares = squares.flatten()
         val endSquare = flattenSquares.first { it.isEnd }
         val toVisitSquares = mutableListOf(startSquare)
-        val costs = Array(squares.size) { IntArray(squares.first().size) { 100000 } }
+        val costs = MutableList(squares.size) { MutableList(squares.first().size) { 1000 } }
         costs[startSquare.y][startSquare.x] = 0
 
         while (toVisitSquares.isNotEmpty()) {
